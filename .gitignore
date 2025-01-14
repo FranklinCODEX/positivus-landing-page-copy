@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+perso-copy.txt
 dist-ssr
 *.local
 
