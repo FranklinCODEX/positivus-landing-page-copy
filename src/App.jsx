@@ -21,6 +21,29 @@ import socialMediaSpecialisImg from "./assets/images/brian william.png";
 import contentCreatorImg from "./assets/images/sarah kim.png";
 
 export default function App() {
+
+
+  const handleOpen = (e) => {
+
+    const trigger = e.target;
+    const parentDiv = trigger.closest('.flex.flex-row.justify-between.items-center.p-2');
+    const targetDiv = parentDiv.nextElementSibling;
+
+    console.log(e.target.parentElement.parentElement.parentElement.classList);
+    
+    
+    if (e.target.classList.contains('fa-minus')) {
+      e.target.classList.replace('fa-minus', 'fa-plus')
+      e.target.parentElement.parentElement.parentElement.classList.replace('bg-c-green', 'bg-gray-300')
+      targetDiv.classList.add('hidden')
+    }else {
+      e.target.classList.replace('fa-plus', 'fa-minus')
+      e.target.parentElement.parentElement.parentElement.classList.replace('bg-gray-300', 'bg-c-green')
+      targetDiv.classList.remove('hidden')
+    }
+    
+  }
+
   return (
     <>
       <Navbar />
@@ -41,7 +64,11 @@ export default function App() {
                 Book a consultation{" "}
               </button>
             </div>
-            <img className="hover:scale-105 hover:shadow-xl" src={heroImg} alt="hero image" />
+            <img
+              className="hover:scale-105 hover:shadow-xl"
+              src={heroImg}
+              alt="hero image"
+            />
           </div>
         </div>
       </section>
@@ -306,11 +333,11 @@ export default function App() {
                         <span className="font-bold text-5xl">01</span>{" "}
                         Consultation
                       </h1>
-                      <span className="bg-gray-200 py-1 px-2 rounded-full border border-black">
+                      <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-minus"></i>
                       </span>
                     </div>
-                    <div className="border-t mt-7 p-3 ">
+                    <div className="border-t mt-7 p-3 element" >
                       <p className="text-base mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
@@ -328,7 +355,7 @@ export default function App() {
                         <span className="font-bold text-5xl">02</span> Reasearch
                         and Strategy Development{" "}
                       </h1>
-                      <span className="bg-gray-200 py-1 px-2 rounded-full border border-black">
+                      <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-plus"></i>
                       </span>
                     </div>
@@ -350,7 +377,7 @@ export default function App() {
                         <span className="font-bold text-5xl">03</span>{" "}
                         Implementation{" "}
                       </h1>
-                      <span className="bg-gray-200 py-1 px-2 rounded-full border border-black">
+                      <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-plus"></i>
                       </span>
                     </div>
@@ -372,7 +399,7 @@ export default function App() {
                         <span className="font-bold text-5xl">04</span>{" "}
                         Monitoring and Optimization{" "}
                       </h1>
-                      <span className="bg-gray-200 py-1 px-2 rounded-full border border-black">
+                      <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-plus"></i>
                       </span>
                     </div>
@@ -394,7 +421,7 @@ export default function App() {
                         <span className="font-bold text-5xl">05</span> Reporting
                         and Communication
                       </h1>
-                      <span className="bg-gray-200 py-1 px-2 rounded-full border border-black">
+                      <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-plus"></i>
                       </span>
                     </div>
@@ -416,7 +443,7 @@ export default function App() {
                         <span className="font-bold text-5xl">06</span> Continual
                         Improvement
                       </h1>
-                      <span className="bg-gray-200 py-1 px-2 rounded-full border border-black ">
+                      <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black ">
                         <i className="fa-solid fa-plus"></i>
                       </span>
                     </div>
@@ -472,7 +499,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className=" border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
+                <div className="border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
                   <div className="flex flex-row justify-between border-b p-2 border-black items-center pb-5 mt-3">
                     <img src={directorOpsImg} alt="" />
                     <div className=" self-end">
@@ -493,7 +520,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className=" border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
+                <div className="border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
                   <div className="flex flex-row justify-between border-b p-2 pb-5 border-black items-center  mt-3">
                     <img src={seoAnaliticsImg} alt="" />
                     <div className=" self-end">
@@ -514,7 +541,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className=" border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
+                <div className="border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
                   <div className="flex flex-row justify-between border-b border-black items-center p-2 pb-5">
                     <img src={managerImg} alt="" />
                     <div className=" self-end">
@@ -535,7 +562,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className=" border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
+                <div className="border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
                   <div className="flex flex-row justify-between border-b border-black items-center p-2 pb-5">
                     <img src={socialMediaSpecialisImg} alt="" />
                     <div className=" self-end">
@@ -557,7 +584,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className=" border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
+                <div className="border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
                   <div className="flex flex-row justify-between border-b border-black items-center p-2 pb-5">
                     <img src={contentCreatorImg} alt="" />
                     <div className=" self-end">
@@ -587,7 +614,33 @@ export default function App() {
         </div>
       </section>
 
-      
+      <section className="my-24">
+        <div className="container mx-auto">
+          <div className="flex flex-col">
+            <div className="flex flex-row items-center gap-7 ">
+              <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
+                Contact Us
+              </h1>
+              <p className="text-lg w-[27%]">
+              Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs
+              </p>
+            </div>
+
+            <div className="mt-7">
+              <div className="p-10" >
+                <div className="flex flex-row gap-5 items-center bg-gray-200 p-5">
+                  <div className="flex flex-col gap-7" >
+                    <div className="flex flex-col gap-1" >
+                      <label htmlFor="name">Name</label>
+                      <input type="text" className=" border px-3 py-2 border-black rounded-xl" placeholder="Name" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
