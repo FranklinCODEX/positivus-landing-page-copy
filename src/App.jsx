@@ -49,10 +49,10 @@ export default function App() {
         <div className="container mx-auto">
           <div className="flex small:flex-col sm:flex-col lg:flex-row justify-between gap-5">
             <div className="flex flex-col sm:gap-5 small:gap-5 lg:gap-10 small:items-center small:justify-center sm:items-center sm:justify-center  lg:items-start small:p-2">
-              <h1 className="font-bold lg:text-7xl small:text-5xl sm:text-5xl small:text-center sm:text-center ">
+              <h1 className="font-bold lg:text-start lg:text-7xl small:text-5xl sm:text-5xl small:text-center sm:text-center ">
                 Navigating the digital landscape for success
               </h1>
-              <p className="small:text-center sm:text-center text-base" >
+              <p className="small:text-center sm:text-center text-base lg:text-start" >
                 Our digital marketing agency helps businesses grow and succeed
                 online through a range of services including SEO, PPC, social
                 media marketing, and content creation.
