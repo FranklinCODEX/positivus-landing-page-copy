@@ -28,9 +28,6 @@ export default function App() {
     const trigger = e.target;
     const parentDiv = trigger.closest('.flex.flex-row.justify-between.items-center.p-2');
     const targetDiv = parentDiv.nextElementSibling;
-
-    console.log(e.target.parentElement.parentElement.parentElement.classList);
-    
     
     if (e.target.classList.contains('fa-minus')) {
       e.target.classList.replace('fa-minus', 'fa-plus')
@@ -50,12 +47,12 @@ export default function App() {
 
       <section className="my-16">
         <div className="container mx-auto">
-          <div className="flex flex-row justify-between gap-5">
-            <div className="flex flex-col gap-10 justify-center items-start">
-              <h1 className="font-bold text-7xl">
+          <div className="flex small:flex-col sm:flex-col lg:flex-row justify-between gap-5">
+            <div className="flex flex-col sm:gap-5 small:gap-5 lg:gap-10 small:items-center small:justify-center sm:items-center sm:justify-center  lg:items-start small:p-2">
+              <h1 className="font-bold lg:text-7xl small:text-5xl sm:text-5xl small:text-center sm:text-center ">
                 Navigating the digital landscape for success
               </h1>
-              <p>
+              <p className="small:text-center sm:text-center text-base" >
                 Our digital marketing agency helps businesses grow and succeed
                 online through a range of services including SEO, PPC, social
                 media marketing, and content creation.
@@ -73,55 +70,55 @@ export default function App() {
         </div>
       </section>
 
-      <section className="my-24">
+      <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto ">
-          <div className="grid grid-cols-6 justify-items-center">
+          <div className="grid small:grid-cols-3 sm:grid-cols-3 small:gap-5 lg:grid-cols-6 justify-items-center">
             <img
-              className="grayscale hover:grayscale-0"
+              className="lg:grayscale lg:hover:grayscale-0 sm:grayscale-0 small:grayscale-0"
               src={amazoneImg}
               alt=""
             />
             <img
-              className="grayscale hover:grayscale-0"
+              className="lg:grayscale lg:hover:grayscale-0 sm:grayscale-0 small:grayscale-0"
               src={dribbbleImg}
               alt=""
             />
             <img
-              className="grayscale hover:grayscale-0"
+              className="lg:grayscale lg:hover:grayscale-0 sm:grayscale-0 small:grayscale-0"
               src={hubspotImg}
               alt=""
             />
             <img
-              className="grayscale hover:grayscale-0"
+              className="lg:grayscale lg:hover:grayscale-0 sm:grayscale-0 small:grayscale-0"
               src={notionImg}
               alt=""
             />
             <img
-              className="grayscale hover:grayscale-0"
+              className="lg:grayscale lg:hover:grayscale-0 sm:grayscale-0 small:grayscale-0"
               src={netflixImg}
               alt=""
             />
-            <img className="grayscale hover:grayscale-0" src={zoomImg} alt="" />
+            <img className="lg:grayscale lg:hover:grayscale-0 sm:grayscale-0 small:grayscale-0" src={zoomImg} alt="" />
           </div>
         </div>
       </section>
 
-      <section className="my-24">
+      <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto">
           <div className="flex-flex-col w-full">
-            <div className="flex flex-row items-center gap-7 ">
+            <div className="flex lg:flex-row small:flex-col items-center gap-7 ">
               <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
                 Services
               </h1>
-              <p className="text-lg w-[45%]">
+              <p className="text-lg lg:w-[45%] w-full small:text-center sm:text-center">
                 At our digital marketing agency, we offer a range of services to
                 help businesses grow and succeed online. These services include:
               </p>
             </div>
 
             <div className="flex flex-col mt-12 gap-10">
-              <div className="grid grid-cols-2 gap-12 justify-items-center">
-                <div className="p-7 border border-black bg-gray-200 border-b-[5px] flex-row flex justify-between rounded-[3rem] ">
+              <div className="grid lg:grid-cols-2 sm:grid-cols-1 small:grid-cols-1 sm:p-3 small:p-3 gap-10  justify-items-center">
+                <div className="p-7 border border-black bg-gray-200 border-b-4 flex-row flex justify-between rounded-[3rem] w-full ">
                   <div className="flex flex-col justify-between">
                     <h1 className="bg-c-green px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
                       Service engine optimization{" "}
@@ -136,9 +133,9 @@ export default function App() {
                   <img src={grid1Img} alt="" />
                 </div>
 
-                <div className="p-7 border bg-c-green border-black border-b-[5px] flex-row justify-between flex rounded-[3rem]">
+                <div className="p-7 border bg-c-green border-black border-b-4 flex-row justify-between flex rounded-[3rem] w-full">
                   <div className="flex flex-col justify-between">
-                    <h1 className="bg-gray-200 px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
+                    <h1 className="bg-gray-200 px-3 lg:w-[70%] sm:w-full small:w-full py-1 font-bold text-xl rounded-lg">
                       Pay-per-click advertising{" "}
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
@@ -152,8 +149,8 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-12 justify-items-center">
-                <div className="p-7 border border-black bg-black border-b-[5px] flex-row flex justify-between rounded-[3rem] w-[95%] ">
+              <div className="grid lg:grid-cols-2 sm:grid-cols-1 small:grid-cols-1 grid-cols-2 gap-12 justify-items-center">
+                <div className="p-7 border border-black bg-black border-b-4 flex-row flex justify-between rounded-[3rem] w-full ">
                   <div className="flex flex-col justify-between">
                     <h1 className="bg-gray-200 px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
                       Social Media Marketing
@@ -168,14 +165,14 @@ export default function App() {
                   <img src={grid3Img} alt="" />
                 </div>
 
-                <div className="p-7 border bg-gray-300 border-black border-b-[5px] flex-row justify-between flex rounded-[3rem] w-[85%]">
+                <div className="p-7 border bg-gray-300 border-black border-b-4 flex-row justify-between flex rounded-[3rem] w-full">
                   <div className="flex flex-col justify-between">
                     <h1 className="bg-c-green px-3  py-1 font-bold text-xl rounded-lg">
                       Email <br /> marketing{" "}
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
                       <span className="bg-black py-1 px-2 text-c-green-400 rounded-full">
-                        <i className="fa-solid fa-arrow-right -rotate-45"></i>
+                        <i className="fa-solid fa-arrow-right text-white -rotate-45"></i>
                       </span>
                       <span className="text-lg">Learn more</span>
                     </div>
@@ -184,8 +181,8 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-12 justify-items-center">
-                <div className="p-7 border bg-c-green border-black border-b-[5px] flex-row justify-between flex rounded-[3rem] w-[95%] ">
+              <div className="grid lg:grid-cols-2 sm:grid-cols-1 small:grid-cols-1 grid-cols-2 gap-12 justify-items-center">
+                <div className="p-7 border bg-c-green border-black border-b-8 flex-row justify-between flex rounded-[3rem] w-full ">
                   <div className="flex flex-col justify-between">
                     <h1 className="bg-gray-200 px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
                       Content Creation
@@ -200,7 +197,7 @@ export default function App() {
                   <img src={grid5Img} alt="" />
                 </div>
 
-                <div className="p-7 border border-black bg-black border-b-[5px] flex-row flex justify-between rounded-[3rem] ">
+                <div className="p-7 border border-black bg-black flex-row flex justify-between rounded-[3rem] w-full ">
                   <div className="flex flex-col justify-between">
                     <h1 className="bg-c-green px-3 w-[80%] py-1 font-bold text-xl rounded-lg">
                       Analitics and tracking
@@ -220,41 +217,41 @@ export default function App() {
         </div>
       </section>
 
-      <section className="my-24 ">
-        <div className="container mx-auto bg-gray-300 rounded-3xl p-16">
-          <div className="flex flex-row justify-between">
-            <div className="grid grid-cols-2 justify-items-center relative ">
-              <div className="flex flex-col items-start gap-10">
+      <section className="my-24 sm:px-5 small:px-5 ">
+        <div className="container mx-auto bg-gray-300 rounded-3xl lg:p-16 small:p-10">
+          <div className="flex lg:flex-row small:flex-col small:items-center sm:items-center justify-between">
+            <div className="grid lg:grid-cols-2 small:grids-cols-1 sm:grids-cols-1 justify-items-center relative ">
+              <div className="flex flex-col sm:justify-center small:items-center sm:items-center lg:items-start lg:gap-10 small:gap-5">
                 <h1 className="text-3xl font-bold">
                   Let&apos;s make things happen{" "}
                 </h1>
-                <p className="text-base">
+                <p className="text-base w-full">
                   {" "}
                   Contact us today to learn more about how our digital marketing
                   services can help your business grow and succeed online.{" "}
                 </p>
-                <button className="text-center px-6 py-3 bg-black text-white rounded-lg">
+                <button className="text-center px-6 py-3 bg-black text-white rounded-lg sm:w-full small:w-full">
                   Get your free proposal
                 </button>
               </div>
               <img
                 src={getFree}
                 alt=""
-                className="absolute right-24 -top-20 "
+                className="absolute right-24 -top-20 lg:block sm:hidden small:hidden "
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="my-24">
+      <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
               <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
                 Cases Studies
               </h1>
-              <p className="text-lg w-[55%] ">
+              <p className="text-lg lg:w-[55%] sm:w-full ">
                 Explore Real-Life Examples of Our Proven Digital Marketing
                 Success through Our Case Studies
               </p>
@@ -262,8 +259,8 @@ export default function App() {
 
             <div className=" mt-7">
               <div className="container px-8">
-                <div className="grid grid-cols-3 justify-items-center text-white bg-black  rounded-[2rem] p-5">
-                  <div className="flex flex-col justify-center gap-5 border-r p-10 ">
+                <div className="grid lg:grid-cols-3 small:grid-cols-1 sm:grid-cols-1 justify-items-center text-white bg-black  rounded-[2rem] p-5">
+                  <div className="flex flex-col justify-center gap-5 lg:border-r small:border-b sm:border-b p-10 ">
                     <p className="text-base">
                       For a local restaurant, we implemented a targeted PPC
                       campaign that resulted in a 50% increase in website
@@ -277,7 +274,7 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-5 border-r p-10">
+                  <div className="flex flex-col gap-5 lg:border-r small:border-b sm:border-b p-10">
                     <p className="text-base">
                       For a B2B software company, we developed an SEO strategy
                       that resulted in a first page ranking for key keywords and
@@ -311,14 +308,14 @@ export default function App() {
         </div>
       </section>
 
-      <section className="my-24">
+      <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
-              <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
+              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl sm:text-2xl small:text-2xl rounded-lg">
                 Our Working progress
               </h1>
-              <p className="text-lg w-[23%] ">
+              <p className="text-lg lg:w-[23%] small:w-full sm:w-full ">
                 Step-by-Step Guide to Achieving Your Business Goals
               </p>
             </div>
@@ -330,7 +327,7 @@ export default function App() {
                     <div className="flex flex-row justify-between items-center p-2">
                       <h1 className="text-3xl text-center">
                         {" "}
-                        <span className="font-bold text-5xl">01</span>{" "}
+                        <span className="font-bold lg:text-5xl small:text-3xl">01</span>{" "}
                         Consultation
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -352,14 +349,14 @@ export default function App() {
                     <div className="flex flex-row justify-between items-center p-2">
                       <h1 className="text-3xl">
                         {" "}
-                        <span className="font-bold text-5xl">02</span> Reasearch
+                        <span className="font-bold lg:text-5xl small:text-3xl">02</span> Reasearch
                         and Strategy Development{" "}
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-plus"></i>
                       </span>
                     </div>
-                    <div className="border-t mt-7 p-3 hidden ">
+                    <div className="border-t mt-7 p-3 hidden">
                       <p className="text-base mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
@@ -374,7 +371,7 @@ export default function App() {
                     <div className="flex flex-row justify-between items-center p-2 ">
                       <h1 className="text-3xl">
                         {" "}
-                        <span className="font-bold text-5xl">03</span>{" "}
+                        <span className="font-bold lg:text-5xl small:text-3xl">03</span>{" "}
                         Implementation{" "}
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -396,7 +393,7 @@ export default function App() {
                     <div className="flex flex-row justify-between items-center p-2 ">
                       <h1 className="text-3xl">
                         {" "}
-                        <span className="font-bold text-5xl">04</span>{" "}
+                        <span className="font-bold lg:text-5xl small:text-3xl">04</span>{" "}
                         Monitoring and Optimization{" "}
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -418,7 +415,7 @@ export default function App() {
                     <div className="flex flex-row justify-between items-center p-2 ">
                       <h1 className="text-3xl">
                         {" "}
-                        <span className="font-bold text-5xl">05</span> Reporting
+                        <span className="font-bold lg:text-5xl small:text-3xl">05</span> Reporting
                         and Communication
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -440,7 +437,7 @@ export default function App() {
                     <div className="flex flex-row justify-between items-center p-2">
                       <h1 className="text-3xl">
                         {" "}
-                        <span className="font-bold text-5xl">06</span> Continual
+                        <span className="font-bold lg:text-5xl small:text-3xl">06</span> Continual
                         Improvement
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black ">
@@ -464,20 +461,20 @@ export default function App() {
         </div>
       </section>
 
-      <section className="my-24">
+      <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
-              <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
+              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl small:text-2xl sm:text-2xl rounded-lg">
                 Our Working progress
               </h1>
-              <p className="text-lg w-[23%] ">
+              <p className="text-lg lg:w-[23%] small:w-full sm:w-full ">
                 Step-by-Step Guide to Achieving Your Business Goals
               </p>
             </div>
 
             <div className="mt-7">
-              <div className="grid grid-cols-3  gap-7 p-8 justify-items-center">
+              <div className="grid lg:grid-cols-3 sm:grid-cols-2 small:grid-cols-1 gap-7 p-8 justify-items-center">
                 <div className=" border rounded-[2rem] border-b-8 flex flex-col border-black p-8">
                   <div className="flex flex-row justify-between border-b border-black items-center p-2 pb-5">
                     <img src={ceoImg} alt="" />
@@ -614,7 +611,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="my-24">
+      {/* <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
@@ -640,7 +637,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
