@@ -118,98 +118,94 @@ export default function App() {
 
             <div className="flex flex-col mt-12 gap-10">
               <div className="grid lg:grid-cols-2 sm:grid-cols-1 small:grid-cols-1 sm:p-3 small:p-3 gap-10  justify-items-center">
-                <div className="p-7 border border-black bg-gray-200 border-b-4 flex-row flex justify-between rounded-[3rem] w-full ">
-                  <div className="flex flex-col justify-between">
-                    <h1 className="bg-c-green px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
+                <div className="p-7 border border-black bg-gray-200 gap-1 border-b-4 flex-row flex justify-between rounded-[3rem] w-full ">
+                  <div className="flex flex-col gap-5 justify-between">
+                    <h1 className="bg-c-green px-3 lg:w-[70%] py-1 font-bold lg:text-xl small:text-sm sm:text-md small:w-full rounded-lg">
                       Service engine optimization{" "}
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
-                      <span className="bg-black py-1 px-2 text-c-green rounded-full">
+                      <span className="bg-black py-1 px-2 text-c-green rounded-full ">
                         <i className="fa-solid fa-arrow-right -rotate-45"></i>
                       </span>
-                      <span className="text-lg">Learn more</span>
+                      <span className="lg:text-lg small:text-sm sm:text-lg lg:block small:hidden sm:hidden ">Learn more</span>
                     </div>
                   </div>
-                  <img src={grid1Img} alt="" />
+                  <img className="lg:w-auto small:w-[55%] sm:w-[60%] " src={grid1Img} alt="" />
                 </div>
 
-                <div className="p-7 border bg-c-green border-black border-b-4 flex-row justify-between flex rounded-[3rem] w-full">
-                  <div className="flex flex-col justify-between">
-                    <h1 className="bg-gray-200 px-3 lg:w-[70%] sm:w-full small:w-full py-1 font-bold text-xl rounded-lg">
+                <div className="p-7 border bg-c-green border-black gap-1 border-b-4 flex-row justify-between flex rounded-[3rem] w-full">
+                  <div className="flex flex-col gap-5 justify-between">
+                    <h1 className="bg-gray-200 px-3 lg:w-[70%] sm:w-full small:w-full py-1 font-bold lg:text-xl small:text-sm sm:text-md rounded-lg">
                       Pay-per-click advertising{" "}
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
                       <span className="bg-black py-1 px-2 text-c-green rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45"></i>
                       </span>
-                      <span className="text-lg">Learn more</span>
+                      <span className="lg:text-lg small:text-sm sm:text-lg lg:block small:hidden sm:hidden ">Learn more</span>
                     </div>
                   </div>
-                  <img src={grid2Img} alt="" />
+                  <img className="lg:w-auto small:w-[55%] sm:w-[60%] " src={grid2Img} alt="" />
                 </div>
-              </div>
 
-              <div className="grid lg:grid-cols-2 sm:grid-cols-1 small:grid-cols-1 grid-cols-2 gap-12 justify-items-center">
-                <div className="p-7 border border-black bg-black border-b-4 flex-row flex justify-between rounded-[3rem] w-full ">
-                  <div className="flex flex-col justify-between">
-                    <h1 className="bg-gray-200 px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
+                <div className="p-7 border border-black bg-black gap-1 border-b-4 flex-row flex justify-between rounded-[3rem] w-full ">
+                  <div className="flex flex-col gap-5 justify-between">
+                    <h1 className="bg-gray-200 px-3 lg:w-[70%] small:w-full sm:w-full py-1 font-bold lg:text-xl small:text-sm sm:text-md rounded-lg">
                       Social Media Marketing
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
                       <span className="bg-white py-1 px-2 text-black rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45"></i>
                       </span>
-                      <span className="text-lg text-white">Learn more</span>
+                      <span className="lg:text-lg small:text-sm sm:text-lg text-white lg:block small:hidden sm:hidden ">Learn more</span>
                     </div>
                   </div>
-                  <img src={grid3Img} alt="" />
+                  <img className="lg:w-auto small:w-[55%] sm:w-[60%]" src={grid3Img} alt="" />
                 </div>
 
-                <div className="p-7 border bg-gray-300 border-black border-b-4 flex-row justify-between flex rounded-[3rem] w-full">
+                <div className="p-7 border bg-gray-300 gap-1 border-black border-b-4 flex-row justify-between flex rounded-[3rem] w-full">
                   <div className="flex flex-col justify-between">
-                    <h1 className="bg-c-green px-3  py-1 font-bold text-xl rounded-lg">
+                    <h1 className="bg-c-green px-3 lg:w-auto small:w-full sm:w-full lg:text-xl small:text-sm sm:text-md py-1 font-bold rounded-lg">
                       Email <br /> marketing{" "}
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
                       <span className="bg-black py-1 px-2 text-c-green-400 rounded-full">
                         <i className="fa-solid fa-arrow-right text-white -rotate-45"></i>
                       </span>
-                      <span className="text-lg">Learn more</span>
+                      <span className="lg:text-lg small:text-sm sm:text-lg lg:block small:hidden sm:hidden ">Learn more</span>
                     </div>
                   </div>
-                  <img src={grid4Img} alt="" />
+                  <img className="lg:w-auto small:w-[55%] sm:w-[60%] " src={grid4Img} alt="" />
                 </div>
-              </div>
 
-              <div className="grid lg:grid-cols-2 sm:grid-cols-1 small:grid-cols-1 grid-cols-2 gap-12 justify-items-center">
                 <div className="p-7 border bg-c-green border-black border-b-8 flex-row justify-between flex rounded-[3rem] w-full ">
                   <div className="flex flex-col justify-between">
-                    <h1 className="bg-gray-200 px-3 w-[70%] py-1 font-bold text-xl rounded-lg">
+                    <h1 className="bg-gray-200 px-3 lg:w-[70%] small:w-full sm:w-full lg:text-xl small:text-sm sm:text-md py-1 font-bold text-xl rounded-lg">
                       Content Creation
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
                       <span className="bg-black py-1 px-2 text-c-green rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45"></i>
                       </span>
-                      <span className="text-lg">Learn more</span>
+                      <span className="lg:text-lg small:text-sm sm:text-lg lg:block small:hidden sm:hidden ">Learn more</span>
                     </div>
                   </div>
-                  <img src={grid5Img} alt="" />
+                  <img className="lg:w-auto small:w-[55%]" src={grid5Img} alt="" />
                 </div>
 
-                <div className="p-7 border border-black bg-black flex-row flex justify-between rounded-[3rem] w-full ">
+                <div className="p-7 border border-black gap-1 bg-black flex-row flex justify-between rounded-[3rem] w-full ">
                   <div className="flex flex-col justify-between">
-                    <h1 className="bg-c-green px-3 w-[80%] py-1 font-bold text-xl rounded-lg">
+                    <h1 className="bg-c-green px-3 lg:w-[80%] small:w-full lg:text-xl small:text-sm sm:text-md sm:w-full py-1 font-bold text-xl rounded-lg">
                       Analitics and tracking
                     </h1>
                     <div className="relative flex flex-row gap-2 items-center">
                       <span className="bg-white py-1 px-2 text-black rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45"></i>
                       </span>
-                      <span className="text-lg text-white">Learn more</span>
+                      <span className="lg:text-lg small:text-sm sm:text-lg text-white lg:block small:hidden sm:hidden ">Learn more</span>
                     </div>
                   </div>
-                  <img src={grid6Img} alt="" />
+                  <img className="lg:w-auto small:w-[55%]" src={grid6Img} alt="" />
                 </div>
               </div>
             </div>
@@ -221,16 +217,16 @@ export default function App() {
         <div className="container mx-auto bg-gray-300 rounded-3xl lg:p-16 small:p-10">
           <div className="flex lg:flex-row small:flex-col small:items-center sm:items-center justify-between">
             <div className="grid lg:grid-cols-2 small:grids-cols-1 sm:grids-cols-1 justify-items-center relative ">
-              <div className="flex flex-col sm:justify-center small:items-center sm:items-center lg:items-start lg:gap-10 small:gap-5">
-                <h1 className="text-3xl font-bold">
+              <div className="flex flex-col sm:justify-center small:items-center sm:items-center lg:items-start lg:gap-10 small:gap-5 sm:gap-5">
+                <h1 className="lg:text-3xl small:text-xl sm:text-md font-bold">
                   Let&apos;s make things happen{" "}
                 </h1>
-                <p className="text-base w-full">
+                <p className="lg:text-base small:text-sm sm:text-sm w-full">
                   {" "}
-                  Contact us today to learn more about how our digital marketing
+                  Contact us today t lg:block small:hidden sm:hidden o learn more about how our digital marketing
                   services can help your business grow and succeed online.{" "}
                 </p>
-                <button className="text-center px-6 py-3 bg-black text-white rounded-lg sm:w-full small:w-full">
+                <button className="text-center lg:text-lg small:text-sm px-6 py-3 bg-black text-white rounded-lg lg:w-auto sm:w-auto small:w-auto">
                   Get your free proposal
                 </button>
               </div>
@@ -248,10 +244,10 @@ export default function App() {
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
-              <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
+              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl small:text-xl sm:text-2xl rounded-lg">
                 Cases Studies
               </h1>
-              <p className="text-lg lg:w-[55%] sm:w-full ">
+              <p className="lg:text-lg small:text-sm sm:text-sm lg:w-[55%] sm:w-full small:w-full ">
                 Explore Real-Life Examples of Our Proven Digital Marketing
                 Success through Our Case Studies
               </p>
@@ -260,28 +256,28 @@ export default function App() {
             <div className=" mt-7">
               <div className="container px-8">
                 <div className="grid lg:grid-cols-3 small:grid-cols-1 sm:grid-cols-1 justify-items-center text-white bg-black  rounded-[2rem] p-5">
-                  <div className="flex flex-col justify-center gap-5 lg:border-r small:border-b sm:border-b p-10 ">
+                  <div className="flex flex-col justify-center gap-5 lg:border-r lg:border-b-0 small:border-b sm:border-b p-10 ">
                     <p className="text-base">
                       For a local restaurant, we implemented a targeted PPC
                       campaign that resulted in a 50% increase in website
                       traffic and a 25% increase in sales.
                     </p>
                     <div className="relative flex flex-row items-center">
-                      <span className="text-lg text-c-green">Learn more</span>
+                      <span className="text-lg text-c-green lg:block small:hidden sm:hidden ">Learn more</span>
                       <span className="bg-black py-1 px-2 text-c-green rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45 text-lg"></i>
                       </span>
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-5 lg:border-r small:border-b sm:border-b p-10">
+                  <div className="flex flex-col gap-5 lg:border-r lg:border-b-0 small:border-b sm:border-b  p-10">
                     <p className="text-base">
                       For a B2B software company, we developed an SEO strategy
                       that resulted in a first page ranking for key keywords and
                       a 200% increase in organic traffic.
                     </p>
                     <div className="relative flex flex-row items-center">
-                      <span className="text-lg text-c-green">Learn more</span>
+                      <span className="text-lg text-c-green lg:block small:hidden sm:hidden ">Learn more</span>
                       <span className="bg-black py-1 px-2 text-c-green rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45 text-lg"></i>
                       </span>
@@ -295,7 +291,7 @@ export default function App() {
                       generated a 20% increase in online sales.
                     </p>
                     <div className="relative flex flex-row items-center">
-                      <span className="text-lg text-c-green">Learn more</span>
+                      <span className="text-lg text-c-green lg:block small:hidden sm:hidden ">Learn more</span>
                       <span className="bg-black py-1 px-2 text-c-green rounded-full">
                         <i className="fa-solid fa-arrow-right -rotate-45 text-lg"></i>
                       </span>
@@ -312,10 +308,10 @@ export default function App() {
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
-              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl sm:text-2xl small:text-2xl rounded-lg">
+              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl sm:text-2xl small:text-lg rounded-lg">
                 Our Working progress
               </h1>
-              <p className="text-lg lg:w-[23%] small:w-full sm:w-full ">
+              <p className="lg:text-lg small:text-sm sm:text-sm lg:w-[23%] small:w-full sm:w-full ">
                 Step-by-Step Guide to Achieving Your Business Goals
               </p>
             </div>
@@ -324,18 +320,18 @@ export default function App() {
               <div className="px-8 container">
                 <div className="flex flex-col gap-7">
                   <div className="w-full bg-c-green flex flex-col p-5 rounded-[2rem] border-b-[5px] border-black ">
-                    <div className="flex flex-row justify-between items-center p-2">
-                      <h1 className="text-3xl text-center">
+                    <div className="flex flex-row justify-between items-center p-5">
+                      <h1 className="lg:text-3xl small:text-xl sm:text-2xl text-center">
                         {" "}
-                        <span className="font-bold lg:text-5xl small:text-3xl">01</span>{" "}
+                        <span className="font-bold lg:text-5xl small:text-3xl sm:text-4xl">01</span>{" "}
                         Consultation
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
                         <i className="fa-solid fa-minus"></i>
                       </span>
                     </div>
-                    <div className="border-t mt-7 p-3 element" >
-                      <p className="text-base mt-2">
+                    <div className="border-t mt-7 p-3" >
+                      <p className="lg:text-lg small:text-sm mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
                         current marketing efforts. This will allow us to
@@ -347,9 +343,9 @@ export default function App() {
 
                   <div className="w-full bg-gray-300 flex flex-col p-5 rounded-[2rem] border-b-[5px] border-black ">
                     <div className="flex flex-row justify-between items-center p-2">
-                      <h1 className="text-3xl">
+                      <h1 className="lg:text-3xl small:text-xl sm:text-2xl text-center">
                         {" "}
-                        <span className="font-bold lg:text-5xl small:text-3xl">02</span> Reasearch
+                        <span className="font-bold lg:text-5xl small:text-3xl sm:text-4xl">02</span> Reasearch
                         and Strategy Development{" "}
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -357,7 +353,7 @@ export default function App() {
                       </span>
                     </div>
                     <div className="border-t mt-7 p-3 hidden">
-                      <p className="text-base mt-2">
+                      <p className="lg:text-lg small:text-sm sm:text-sm mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
                         current marketing efforts. This will allow us to
@@ -369,9 +365,9 @@ export default function App() {
 
                   <div className="w-full bg-gray-300  flex flex-col p-5 rounded-[2rem] border-b-[5px] border-black ">
                     <div className="flex flex-row justify-between items-center p-2 ">
-                      <h1 className="text-3xl">
+                      <h1 className="lg:text-3xl small:text-xl sm:text-2xl text-center">
                         {" "}
-                        <span className="font-bold lg:text-5xl small:text-3xl">03</span>{" "}
+                        <span className="font-bold lg:text-5xl small:text-3xl sm:text-4xl">03</span>{" "}
                         Implementation{" "}
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -379,7 +375,7 @@ export default function App() {
                       </span>
                     </div>
                     <div className="border-t mt-7 p-3 hidden ">
-                      <p className="text-base mt-2">
+                      <p className="lg:text-lg small:text-sm sm:text-sm mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
                         current marketing efforts. This will allow us to
@@ -391,9 +387,9 @@ export default function App() {
 
                   <div className="w-full bg-gray-300  flex flex-col p-5 rounded-[2rem] border-b-[5px] border-black ">
                     <div className="flex flex-row justify-between items-center p-2 ">
-                      <h1 className="text-3xl">
+                      <h1 className="lg:text-3xl small:text-xl sm:text-2xl text-center">
                         {" "}
-                        <span className="font-bold lg:text-5xl small:text-3xl">04</span>{" "}
+                        <span className="font-bold lg:text-5xl small:text-3xl sm:text-4xl">04</span>{" "}
                         Monitoring and Optimization{" "}
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -401,7 +397,7 @@ export default function App() {
                       </span>
                     </div>
                     <div className="border-t mt-7 p-3 hidden ">
-                      <p className="text-base mt-2">
+                      <p className="lg:text-lg small:text-sm sm:text-sm mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
                         current marketing efforts. This will allow us to
@@ -413,9 +409,9 @@ export default function App() {
 
                   <div className="w-full bg-gray-300  flex flex-col p-5 rounded-[2rem] border-b-[5px] border-black ">
                     <div className="flex flex-row justify-between items-center p-2 ">
-                      <h1 className="text-3xl">
+                      <h1 className="lg:text-3xl small:text-xl sm:text-2xl text-center">
                         {" "}
-                        <span className="font-bold lg:text-5xl small:text-3xl">05</span> Reporting
+                        <span className="font-bold lg:text-5xl small:text-3xl sm:text-4xl">05</span> Reporting
                         and Communication
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black">
@@ -423,7 +419,7 @@ export default function App() {
                       </span>
                     </div>
                     <div className="border-t mt-7 p-3 hidden ">
-                      <p className="text-base mt-2">
+                      <p className="lg:text-lg small:text-sm sm:text-sm mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
                         current marketing efforts. This will allow us to
@@ -435,9 +431,9 @@ export default function App() {
 
                   <div className="w-full bg-gray-300  flex flex-col p-5 rounded-[2rem] border-b-[5px] border-black ">
                     <div className="flex flex-row justify-between items-center p-2">
-                      <h1 className="text-3xl">
+                      <h1 className="lg:text-3xl small:text-xl sm:text-2xl text-center">
                         {" "}
-                        <span className="font-bold lg:text-5xl small:text-3xl">06</span> Continual
+                        <span className="font-bold lg:text-5xl small:text-3xl sm:text-4xl">06</span> Continual
                         Improvement
                       </h1>
                       <span onClick={handleOpen} className="bg-gray-200 py-1 px-2 rounded-full border border-black ">
@@ -445,7 +441,7 @@ export default function App() {
                       </span>
                     </div>
                     <div className="border-t mt-7 p-3 hidden ">
-                      <p className="text-base mt-2">
+                      <p className="lg:text-lg small:text-sm sm:text-sm mt-2">
                         During the initial consultation, we will discuss your
                         business goals and objectives, target audience, and
                         current marketing efforts. This will allow us to
@@ -465,10 +461,10 @@ export default function App() {
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
-              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl small:text-2xl sm:text-2xl rounded-lg">
+              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl small:text-md sm:text-2xl rounded-lg">
                 Our Working progress
               </h1>
-              <p className="text-lg lg:w-[23%] small:w-full sm:w-full ">
+              <p className="lg:text-lg small:text-sm lg:w-[23%] small:w-full sm:w-full ">
                 Step-by-Step Guide to Achieving Your Business Goals
               </p>
             </div>
@@ -611,14 +607,14 @@ export default function App() {
         </div>
       </section>
 
-      {/* <section className="my-24 sm:px-5 small:px-5">
+      <section className="my-24 sm:px-5 small:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-row items-center gap-7 ">
-              <h1 className="bg-c-green px-3 py-1 font-bold text-3xl rounded-lg">
+              <h1 className="bg-c-green px-3 py-1 font-bold lg:text-3xl small:text-lg sm:text-lg text-center rounded-lg">
                 Contact Us
               </h1>
-              <p className="text-lg w-[27%]">
+              <p className="lg:text-lg small:text-sm sm:text-md lg:w-[27%] small:w-full">
               Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs
               </p>
             </div>
@@ -627,6 +623,10 @@ export default function App() {
               <div className="p-10" >
                 <div className="flex flex-row gap-5 items-center bg-gray-200 p-5">
                   <div className="flex flex-col gap-7" >
+                    <div className="flex flex-row gap-5" >
+                      <input className="appearance-none w-7 h-7 border-2 border-black rounded-full  " type="radio" name="sexe" />
+                      <input className="appearance-none w-7 h-7 border-2 border-black rounded-full" type="radio" name="sexe" />
+                    </div>
                     <div className="flex flex-col gap-1" >
                       <label htmlFor="name">Name</label>
                       <input type="text" className=" border px-3 py-2 border-black rounded-xl" placeholder="Name" />
@@ -637,7 +637,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 }
